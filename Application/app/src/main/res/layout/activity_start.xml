@@ -50,11 +50,38 @@
 
         </LinearLayout>
 
-        <ImageView
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuário"
+                android:id="@+id/textView"
+                android:layout_weight="0.06"
+                android:layout_gravity="center_vertical" />
+
+        </TableRow>
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="ENTRAR"
+            android:id="@+id/button"
+            android:layout_gravity="center"
+            android:background="#ff0000"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="616dp"
+            android:layout_height="145dp"
             android:id="@+id/imageView"
-            android:layout_gravity="center_horizontal|top" />
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/logo"/>
+
     </FrameLayout>
 
 </FrameLayout>
